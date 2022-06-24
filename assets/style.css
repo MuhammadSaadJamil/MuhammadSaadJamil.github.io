@@ -269,21 +269,23 @@ body {
 
 .hero-img {
   width: 75%;
-  height: 100%;
+  height :auto;
+  object-fit: cover;
+
 }
 
 .hero-content {
   color: white;
 }
 
-.hero-content__heading {
+.hero-content-heading {
   font-size: 3.0rem;
   font-weight: 300;
   padding: 3.4rem 0rem 1.3rem 0rem;
   line-height: 3.8rem;
 }
 
-.hero-content__heading__span {
+.hero-content-heading-span {
   display: block;
   font-weight: 500;
 }
@@ -300,16 +302,17 @@ body {
 }
 
 .intro-img {
-  height: 95%;
-  width: 95%;
+  height :auto;
+  width: 90%;
   padding: 0.5vh 0 0 0;
+  object-fit: cover;
 }
 
 .intro-content {
   padding: 6% 27% 6% 0rem;
 }
 
-.intro-content__p {
+.intro-content-paragraph {
   padding-top: 1.25rem;
 }
 
@@ -323,8 +326,9 @@ body {
 }
 
 .feature-img {
-  height: 90%;
+  height: auto;
   width: 95%;
+  object-fit: cover;
 }
 
 .feature-content {
@@ -456,7 +460,7 @@ body {
   color: #0088E8;
 }
 
-.question__p {
+.question-paragraph {
   font-size: 0.7rem;
   padding: 0.7rem 0rem 0.1rem 0rem;
 }
@@ -469,7 +473,7 @@ body {
   padding: 0rem 0rem 0rem 20%;
 }
 
-.faq-description__p {
+.faq-description-paragraph {
   padding: 1.25rem 0rem 0rem 0rem;
 }
 
@@ -570,7 +574,7 @@ footer .row {
   # Tablet Section
 \*------------------------------------*/
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
 
   /* -----------------------  */
   /* Universal design */
@@ -686,16 +690,16 @@ footer .row {
     width: 100%;
   }
 
-  .hero-content__heading {
+  .hero-content-heading {
     text-align: center;
   }
 
-  .hero-content__heading__span {
+  .hero-content-heading-span {
     display: inline;
 
   }
 
-  .hero-content__p {
+  .hero-content-paragraph {
     text-align: center;
 
   }
@@ -820,7 +824,7 @@ footer .row {
     padding-bottom: 1rem;
   }
 
-  .copyright__p {
+  .copyright-paragraph {
     width: 100%;
     text-align: center;
   }
@@ -852,7 +856,7 @@ footer .row {
     background-size: cover;
   }
 
-  .hero-content__heading {
+  .hero-content-heading {
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 0.1rem;
